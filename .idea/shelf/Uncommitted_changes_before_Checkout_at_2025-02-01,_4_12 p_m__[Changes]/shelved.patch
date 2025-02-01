@@ -1,0 +1,109 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"416789ec-a3b0-461c-ba6f-41cb2af52c41\" name=\"Changes\" comment=\"Adding alert button functionality. Including styling for container and image.\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;Karie-I&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">{\n  &quot;selectedUrlAndAccountId&quot;: {\n    &quot;url&quot;: &quot;https://github.com/K0A1R/cprg303-assignment1&quot;,\n    &quot;accountId&quot;: &quot;cc8f942f-b2a5-4292-802b-d3d529c9e6a0&quot;\n  }\n}</component>\n  <component name=\"ProblemsViewState\">\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 1\n}</component>\n  <component name=\"ProjectId\" id=\"2sSVJJQoxAZ1eWLxJi9ssocqTW5\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"RunOnceActivity.git.unshallow\": \"true\",\n    \"last_opened_file_path\": \"/home/karie/cprg303-assignment1/assets\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/assets\" />\n    </key>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"416789ec-a3b0-461c-ba6f-41cb2af52c41\" name=\"Changes\" comment=\"\" />\n      <created>1738448889425</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1738448889425</updated>\n      <workItem from=\"1738448890738\" duration=\"42000\" />\n      <workItem from=\"1738448948654\" duration=\"29000\" />\n      <workItem from=\"1738449003577\" duration=\"25000\" />\n      <workItem from=\"1738449046677\" duration=\"17000\" />\n      <workItem from=\"1738449080302\" duration=\"22000\" />\n      <workItem from=\"1738449126810\" duration=\"450000\" />\n      <workItem from=\"1738449579877\" duration=\"88000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Adding alert button functionality. Including styling for container and image.\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1738449194061</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1738449194061</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Adding alert button functionality. Including styling for container and image.\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1738449328463</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1738449328463</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Adding alert button functionality. Including styling for container and image.\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Adding alert button functionality. Including styling for container and image.\" />\n  </component>\n</project>
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision a3d5c6b6311e3fc1fdccb0336827723b4a1ffed3)
++++ b/.idea/workspace.xml	(date 1738451520046)
+@@ -4,7 +4,10 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="416789ec-a3b0-461c-ba6f-41cb2af52c41" name="Changes" comment="Adding alert button functionality. Including styling for container and image." />
++    <list default="true" id="416789ec-a3b0-461c-ba6f-41cb2af52c41" name="Changes" comment="Adding alert button functionality. Including styling for container and image. Added image to assets as well.">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -28,6 +31,16 @@
+   &quot;selectedUrlAndAccountId&quot;: {
+     &quot;url&quot;: &quot;https://github.com/K0A1R/cprg303-assignment1&quot;,
+     &quot;accountId&quot;: &quot;cc8f942f-b2a5-4292-802b-d3d529c9e6a0&quot;
++  },
++  &quot;recentNewPullRequestHead&quot;: {
++    &quot;server&quot;: {
++      &quot;useHttp&quot;: false,
++      &quot;host&quot;: &quot;github.com&quot;,
++      &quot;port&quot;: null,
++      &quot;suffix&quot;: null
++    },
++    &quot;owner&quot;: &quot;K0A1R&quot;,
++    &quot;repository&quot;: &quot;cprg303-assignment1&quot;
+   }
+ }</component>
+   <component name="ProblemsViewState">
+@@ -41,19 +54,20 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.git.unshallow": "true",
+-    "last_opened_file_path": "/home/karie/cprg303-assignment1/assets",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;#1 on Karie&quot;,
++    &quot;last_opened_file_path&quot;: &quot;/home/karie/cprg303-assignment1/assets&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/assets" />
+@@ -81,6 +95,11 @@
+       <workItem from="1738449080302" duration="22000" />
+       <workItem from="1738449126810" duration="450000" />
+       <workItem from="1738449579877" duration="88000" />
++      <workItem from="1738449670939" duration="325000" />
++      <workItem from="1738450004631" duration="24000" />
++      <workItem from="1738450072780" duration="10000" />
++      <workItem from="1738450093128" duration="12000" />
++      <workItem from="1738450120377" duration="895000" />
+     </task>
+     <task id="LOCAL-00001" summary="Adding alert button functionality. Including styling for container and image.">
+       <option name="closed" value="true" />
+@@ -98,7 +117,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1738449328463</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="Adding alert button functionality. Including styling for container and image. Added image to assets as well.">
++      <option name="closed" value="true" />
++      <created>1738449811861</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1738449811861</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -106,6 +133,7 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Adding alert button functionality. Including styling for container and image." />
+-    <option name="LAST_COMMIT_MESSAGE" value="Adding alert button functionality. Including styling for container and image." />
++    <MESSAGE value="Adding alert button functionality. Including styling for container and image. Added image to assets as well." />
++    <option name="LAST_COMMIT_MESSAGE" value="Adding alert button functionality. Including styling for container and image. Added image to assets as well." />
+   </component>
+ </project>
+\ No newline at end of file
