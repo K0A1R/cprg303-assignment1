@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   Platform,
   StatusBar,
+  Button,
 } from "react-native";
 
 export default function App() {
@@ -51,6 +52,22 @@ export default function App() {
         />
         <Text style={styles.googleButtonText}>Continue with Google</Text>
       </TouchableOpacity>
+
+      <TouchableOpacity
+          activeOpacity={0.5}
+          style={styles.alertButtonContainer}
+      >
+        <Image
+            source={require("./assets/miku.png")}
+            style={styles.mikuImage}
+        />
+        <Button
+            title="Alert"
+            color = "#000000"
+            onPress={() => alert("Alert button pressed")}
+        />
+      </TouchableOpacity>
+
     </SafeAreaView>
   );
 }
@@ -121,6 +138,12 @@ const styles = StyleSheet.create({
     left: 20,
   },
   googleImage: {
+    width: 25,
+    height: 25,
+    position: "absolute",
+    left: 20,
+  },
+  mikuImage: {
     width: 25,
     height: 25,
     position: "absolute",
