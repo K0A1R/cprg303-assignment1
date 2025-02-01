@@ -1,10 +1,45 @@
-import { StyleSheet, Text, View } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  SafeAreaView,
+  Image,
+  TouchableOpacity,
+  Platform,
+  StatusBar,
+} from "react-native";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <TouchableOpacity activeOpacity={0.5} style={styles.emailButtonContainer}>
+        <Image
+          source={require("./assets/mail.png")}
+          style={styles.emailImage}
+        />
+        <Text style={styles.emailButtonText}>Continue with Email</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.5}
+        style={styles.facebookButtonContainer}
+      >
+        <Image
+          source={require("./assets/facebook.png")}
+          style={styles.facebookImage}
+        />
+        <Text style={styles.facebookButtonText}>Continue with FaceBook</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        activeOpacity={0.5}
+        style={styles.googleButtonContainer}
+      >
+        <Image
+          source={require("./assets/google.png")}
+          style={styles.googleImage}
+        />
+        <Text style={styles.googleButtonText}>Continue with Google</Text>
+      </TouchableOpacity>
+    </SafeAreaView>
   );
 }
 
@@ -14,5 +49,69 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0, // For Android devices
+  },
+  emailButtonContainer: {
+    marginTop: 15,
+    borderWidth: 1,
+    borderColor: "lightgray",
+    borderRadius: 15,
+    width: "80%",
+    height: 50,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  emailButtonText: {
+    fontSize: 15,
+    color: "black",
+    fontWeight: "bold",
+  },
+  facebookButtonContainer: {
+    marginTop: 15,
+    borderWidth: 1,
+    borderColor: "lightgray",
+    borderRadius: 15,
+    width: "80%",
+    height: 50,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  facebookButtonText: {
+    fontSize: 15,
+    color: "black",
+    fontWeight: "bold",
+  },
+  googleButtonContainer: {
+    marginTop: 15,
+    borderWidth: 1,
+    borderColor: "lightgray",
+    borderRadius: 15,
+    width: "80%",
+    height: 50,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  googleButtonText: {
+    fontSize: 15,
+    color: "black",
+    fontWeight: "bold",
+  },
+  emailImage: {
+    width: 25,
+    height: 25,
+    position: "absolute",
+    left: 20,
+  },
+  facebookImage: {
+    width: 25,
+    height: 25,
+    position: "absolute",
+    left: 20,
+  },
+  googleImage: {
+    width: 25,
+    height: 25,
+    position: "absolute",
+    left: 20,
   },
 });
