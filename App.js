@@ -63,7 +63,6 @@ export default function App() {
         />
         <Button
             title="Alert"
-            color = "#000000"
             onPress={() => alert("Alert button pressed")}
         />
       </TouchableOpacity>
@@ -164,6 +163,16 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     alignItems: 'center',
     width: '80%',
+  },
+  alertButtonContainer: {
+    marginTop: 15,
+    borderWidth: 1,
+    borderColor: "lightgray",
+    borderRadius: 15,
+    width: "80%",
+    height: 50,
+    alignItems: "center",
+    justifyContent: "center",
   },
   cText: {
     color: '#FFF',
