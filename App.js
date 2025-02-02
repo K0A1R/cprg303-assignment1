@@ -67,6 +67,24 @@ export default function App() {
         />
       </TouchableOpacity>
 
+      <Text style={styles.footerText}>
+      By continuing with an account located in{" "} 
+      <Text style={{ fontWeight: 'bold' }}>Canada</Text>, you agree to our{" "}
+      <Text style={{ fontWeight: 'bold' }}>Terms of Service</Text>{" "}
+      and acknowledge that you have read our{" "}
+      <Text style={{ fontWeight: 'bold' }}>Privacy Policy</Text>.
+      </Text>
+
+      <View style={styles.horizontalDivider} />
+
+      <View style={styles.loginContainer}>
+        <Text style={styles.loginText}>Already have an account? </Text>
+        <TouchableOpacity>
+          <Text style={styles.loginButton}>Log in</Text>
+        </TouchableOpacity>
+      </View>
+
+
     </SafeAreaView>
   );
 }
@@ -195,5 +213,37 @@ const styles = StyleSheet.create({
     color: '#999',
     marginHorizontal: 10,
     fontSize: 16,
+  },
+  footerText: {
+    color: '#999',
+    fontSize: 12,
+    textAlign: 'center',
+    position: 'relative',
+    marginTop: 20,
+    width: '80%',
+  },
+  loginContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 10,
+    position: 'relative',
+  },
+  loginText: {
+    color: '#000',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  loginButton: {
+    color: '#FE2C55',
+    fontSize: 16,
+    fontWeight: 'bold',
+    marginLeft: 5,
+  },
+  horizontalDivider: {
+    width: '80%',
+    height: 1,
+    backgroundColor: '#ccc',
+    marginVertical: 20,
   },
 });
